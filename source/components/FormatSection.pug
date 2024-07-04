@@ -1,131 +1,71 @@
 section.format-section
   .wrapper
-    .format-section__inner
-      h2.format-section__title.font-s-44.text-center Какие вложения понадобятся 
+    .format-section__inner.text-center
+      h2.format-section__title.font-s-40 Какие 
+        span.font-i-reg.color-red-1.text-ital инвестиции 
         br
-        |для запуска клуба
+        |потребуются для 
+        br
+        |старта бизнеса?
 
-      .format-section__info
-        .format-section__info-logo
-          img(src="images/logo-mini.svg" loading="lazy" alt="logo" width="55" height="54").d-block
-        .format-section__info-description.font-m-bold Выберите подходящий формат и скачайте подробную финансовую модель со всеми расчетами
+      .format-section__title-helper Выберите количество ПК для вашего 
+        br
+        |компьютерного клуба и узнайте размер 
+        br
+        |инвестиций в 1 клик
 
       .format-section__cards.swiper-format
         .format-section__cards-list.swiper-wrapper
           .format-section__cards-item.swiper-slide
-            .format-section__card.border-r-20
+            .format-section__card
               .format-section__card-num.font-i-bold.font-s-16 1
-              .format-section__card-head
-                .format-section__card-box.format-section__card-box--1
-                  div 20
-                  span компьютеров
-                .format-section__card-box.format-section__card-box--2
-                  div 01
-                  span PlayStation
-              .format-section__card-feedback
-                .feedback
-                  form(data-feedback-form).feedback__form
-                    .feedback__list
-                      .feedback__item
-                        .input
-                          input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
-                      .feedback__item
-                        .input
-                          input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
-                      .feedback__item
-                        button.btn(type="submit")
-                          span Скачать
+              .format-section__card-head.color-white.font-s-24.font-m-s-bold 20 ПК
+              .format-section__card-box
+                .format-section__card-description.font-m-s-bold Паушальный взнос 
+                  br
+                  |2 000 000 тенге
+                .format-section__card-image
+                  img(src="images/format-card-image-1.jpg" loading="lazy" alt="image" width="320" height="230").d-block.border-r-20
+                .format-section__card-feedback
+                  .feedback
+                    form(data-feedback-form).feedback__form
+                      .feedback__list
+                        .feedback__item
+                          .input
+                            input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
+                        .feedback__item
+                          .input
+                            input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+                        .feedback__item
+                          button.btn(type="submit")
+                            span Узнать
           .format-section__cards-item.swiper-slide
-            .format-section__card.border-r-20
+            .format-section__card
               .format-section__card-num.font-i-bold.font-s-16 2
-              .format-section__card-head
-                .format-section__card-box.format-section__card-box--1
-                  div 30
-                  span компьютеров
-                .format-section__card-box.format-section__card-box--2
-                  div 02
-                  span PlayStation
-              .format-section__card-feedback
-                .feedback
-                  form(data-feedback-form).feedback__form
-                    .feedback__list
-                      .feedback__item
-                        .input
-                          input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
-                      .feedback__item
-                        .input
-                          input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
-                      .feedback__item
-                        button.btn(type="submit")
-                          span Скачать
-          .format-section__cards-item.swiper-slide
-            .format-section__card.border-r-20
-              .format-section__card-num.font-i-bold.font-s-16 3
-              .format-section__card-head
-                .format-section__card-box.format-section__card-box--1
-                  div 40
-                  span компьютеров
-                .format-section__card-box.format-section__card-box--2
-                  div 02
-                  span PlayStation
-              .format-section__card-feedback
-                .feedback
-                  form(data-feedback-form).feedback__form
-                    .feedback__list
-                      .feedback__item
-                        .input
-                          input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
-                      .feedback__item
-                        .input
-                          input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
-                      .feedback__item
-                        button.btn(type="submit")
-                          span Скачать
-          .format-section__cards-item.swiper-slide
-            .format-section__card.border-r-20
-              .format-section__card-num.font-i-bold.font-s-16 4
-              .format-section__card-head
-                .format-section__card-box.format-section__card-box--1
-                  div 50
-                  span компьютеров
-                .format-section__card-box.format-section__card-box--2
-                  div 03
-                  span PlayStation
-              .format-section__card-feedback
-                .feedback
-                  form(data-feedback-form).feedback__form
-                    .feedback__list
-                      .feedback__item
-                        .input
-                          input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
-                      .feedback__item
-                        .input
-                          input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
-                      .feedback__item
-                        button.btn(type="submit")
-                          span Скачать
-          .format-section__cards-item.swiper-slide
-            .format-section__card.border-r-20
-              .format-section__card-num.font-i-bold.font-s-16 5
-              .format-section__card-head
-                .format-section__card-box.format-section__card-box--1
-                  div 100
-                  span компьютеров
-                .format-section__card-box.format-section__card-box--2
-                  div 04
-                  span PlayStation
-              .format-section__card-feedback
-                .feedback
-                  form(data-feedback-form).feedback__form
-                    .feedback__list
-                      .feedback__item
-                        .input
-                          input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
-                      .feedback__item
-                        .input
-                          input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
-                      .feedback__item
-                        button.btn(type="submit")
-                          span Скачать
+              .format-section__card-head.color-white.font-s-24.font-m-s-bold 20 ПК
+              .format-section__card-box
+                .format-section__card-description.font-m-s-bold Паушальный взнос 
+                  br
+                  |2 000 000 тенге
+                .format-section__card-image
+                  img(src="images/format-card-image-2.jpg" loading="lazy" alt="image" width="320" height="230").d-block.border-r-20
+                .format-section__card-feedback
+                  .feedback
+                    form(data-feedback-form).feedback__form
+                      .feedback__list
+                        .feedback__item
+                          .input
+                            input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
+                        .feedback__item
+                          .input
+                            input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+                        .feedback__item
+                          button.btn(type="submit")
+                            span Узнать
 
         .format-section__cards-progress.swiper-progress.format-pagination
+
+      .format-section__image.format-section__image--1
+        img(src="images/format-image-1.jpg" loading="lazy" alt="image" width="539" height="539").d-block
+      .format-section__image.format-section__image--2
+        img(src="images/format-image-2.jpg" loading="lazy" alt="image" width="539" height="732").d-block
