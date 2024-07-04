@@ -106,10 +106,18 @@
         position: absolute
         z-index -1
         top: -58px;
-        right: calc(50% - 60px);
+        right: calc(50% - 98px);
+        height: auto
         +above($breakpoints.sm)
-          right -32px
           top: 9px
+          width 140px
+          right -36px
+        +above($breakpoints.md)
+          right -40px
+          width 150px
+        +above($breakpoints.xxl)
+          right -49px
+          width 187px
 
   &__subtitle
     margin: 0 0 20px 0
