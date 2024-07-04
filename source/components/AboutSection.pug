@@ -1,50 +1,82 @@
 section.about-section
   .wrapper
     .about-section__inner
-      h2.about-section__title.font-s-44 «Киберклубы — это 
+      h2.about-section__title.font-s-40.text-center Почему клиенты 
         br
-        |прибыльная ниша с 
-        br
-        |устойчивым спросом»
+        |выбирают 
+        span.font-i-reg.color-red-1.text-ital «THE ONE»
 
-      .about-section__content
-        .about-section__content-icon
-          img(src="images/decor-1.svg" loading="lazy" alt="icon" width="147" height="115").d-block
-        .about-section__story.border-r-20
-          div «RUSH BEE — это современный компьютерный клуб, который мы открыли в 2022 году в Нижнем Новгороде. 
-            |Клуб заслужил популярность, благодаря своей дружелюбной атмосфере, высокой производительности компьютеров и скорости интернета. 
-          div Мы внимательно следим за комфортом пользователей, предлагаем большой ассортимент сопровождающей продукции, 
-            |создали собственную программу лояльности. Оценка клуба в Яндекс — 5 баллов, а в 2ГИС — 4,9. 
-            |В социальных сетях клуба более 2000 человек, и все это — реальные живые люди, которые пользуются нашими услугами.
-          div Поскольку тема киберспорта продолжает активно развиваться, в этой сфере наблюдается повышенный спрос практически 
-            |во всех городах и регионах России. 
-            br
-            |С помощью нашей команды вы сможете быстро открыть свой собственный клуб и вывести его на высокие показатели. 
-            |Этим бизнесом легко управлять, также есть широкие возможности для масштабирования 
-            br
-            |до крупной сети».
 
-        .about-section__photo-container
-          .about-section__photo
-            img(src="images/leader-photo.jpg" loading="lazy" alt="photo" width="560" height="450").d-block.border-r-20
-          .about-section__photo-info
-            .about-section__photo-name Андрей Вдовин 
-              br
-              |Основатель компании
-            .about-section__photo-icon
-              img(src="images/decor-1.svg" loading="lazy" alt="icon" width="147" height="115").d-block
+      .about-section__info
+        .about-section__info-box.border-r-20 Рынок компьютерных клубов активно растет и набирает все большую популярность 
+          |в Казахстане, люди отбрасывают прежние представления 
+          br
+          |о компьютерных клубах 
+          br
+          |и регулярно посещают их
+        .about-section__info-box.border-r-20 За 4 года 
+          br
+          |работы нас посетили 
+          br
+          |тысячи клиентов, 70% из них
+          br
+          |возвращаются к нам повторно, 
+          br
+          |50% cтановятся нашими 
+          br
+          |постоянными посетителями
+          img(src="images/logo-main.svg" loading="lazy" alt="logo" width="127" height="70").d-block
+
+      h3.about-section__subtitle.font-s-40.text-center Мы предлагаем:
+
+      .about-section__cards.swiper-about
+        .about-section__cards-list.swiper-wrapper
+          .about-section__cards-item.swiper-slide
+            .about-section__card.border-r-20
+              .about-section__card-num.font-s-14.font-m-s-bold 01
+              .about-section__card-description Круглосуточный 
+                br
+                |режим работы
+          .about-section__cards-item.swiper-slide
+            .about-section__card.border-r-20
+              .about-section__card-num.font-s-14.font-m-s-bold 02
+              .about-section__card-description В наличии оригинальные 
+                br
+                |игры на PS4, PS5
+          .about-section__cards-item.swiper-slide
+            .about-section__card.border-r-20
+              .about-section__card-num.font-s-14.font-m-s-bold 03
+              .about-section__card-description Три разных зоны: 
+                br
+                |общий зал, VIP, PRO
+          .about-section__cards-item.swiper-slide
+            .about-section__card.border-r-20
+              .about-section__card-num.font-s-14.font-m-s-bold 04
+              .about-section__card-description Возможность играть 
+                br
+                |командой по сети
+          .about-section__cards-item.swiper-slide
+            .about-section__card.border-r-20
+              .about-section__card-num.font-s-14.font-m-s-bold 05
+              .about-section__card-description 54 посадочных 
+                br
+                |места
+          .about-section__cards-item.swiper-slide
+            .about-section__card.border-r-20
+              .about-section__card-num.font-s-14.font-m-s-bold 06
+              .about-section__card-description Доступные цены и 
+                br
+                |система лояльности
+        .about-section__cards-progress.swiper-progress.about-pagination
 
       .about-section__feedback
-        .feedback.border-r-20
+        .feedback
           form(data-feedback-form).feedback__form
-            h3.feedback__title.color-white.text-center.font-s-32 Буду рад ответить на ваши 
+            h3.feedback__title.text-center.font-s-40 Откройте клуб по готовой бизнес-модели
               br
-              |вопросы по франшизе!
-            .feedback__wrapper
-              .feedback__list
-                .feedback__item
-                  .input
-                    textarea(name="answer" placeholder="Текст вопроса").input__field.input__field--textarea
+              |и займите свое конкурентное место на рынке!
+            .feedback__container.border-r-20
+              .feedback__description.text-center Получите подробную презентацию франшизы
               .feedback__list
                 .feedback__item
                   .input
@@ -52,9 +84,12 @@ section.about-section
                 .feedback__item
                   .input
                     input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
-              .feedback__list
                 .feedback__item
                   button.btn(type="submit")
-                    span Задать вопрос 
-                      br
-                      |основателю
+                    span Получить
+
+      .about-section__bg-container
+        .about-section__bg-image
+          img(src="images/about-bg.jpg" loading="lazy" alt="image" width="1920" height="425").d-block
+        .about-section__photo
+          img(src="images/about-photo.png" loading="lazy" alt="image" width="688" height="554").d-block

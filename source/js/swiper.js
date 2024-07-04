@@ -1,10 +1,10 @@
-function initSwiperMain() {
-  const swiper = new Swiper('.swiper-main', {
+function initSwiperFinances() {
+  const swiper = new Swiper('.swiper-finances', {
     speed: 450,
     effect: 'coverflow',
     rewind: true,
     pagination: {
-      el: '.main-pagination',
+      el: '.finances-pagination',
       type: 'progressbar',
     },
     breakpoints: {
@@ -34,13 +34,13 @@ function initSwiperMain() {
   })
 }
 
-function initSwiperFinances() {
-  const swiper = new Swiper('.swiper-finances', {
+function initSwiperAbout() {
+  const swiper = new Swiper('.swiper-about', {
     speed: 450,
     effect: 'coverflow',
     rewind: true,
     pagination: {
-      el: '.finances-pagination',
+      el: '.about-pagination',
       type: 'progressbar',
     },
     breakpoints: {
@@ -143,8 +143,8 @@ function initSwiperSupport() {
 }
 
 $(document).ready(function () {
-  initSwiperMain()
   initSwiperFinances()
+  initSwiperAbout()
   initSwiperFormat()
   initSwiperSupport()
 })
