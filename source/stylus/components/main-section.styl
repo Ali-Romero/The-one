@@ -8,11 +8,23 @@
   background-color: #161616
   color: $color-white
   +above($breakpoints.sm)
-    background-position: center
-  +above($breakpoints.md)
-    padding: 10px 0 0 0
-  +above($breakpoints.xxl)
-    padding: 25px 0 0 0
+    background-position: center bottom
+  &:before
+    display: none
+    +above($breakpoints.sm)
+      content: ""
+      position: absolute
+      display: block
+      z-index -1
+      top: 0
+      bottom: 0
+      width 50vw
+      background-color: $color-red-1
+      left: calc(50% - -139px)
+    +above($breakpoints.md)
+      left: calc(50% - -231px)
+    +above($breakpoints.xxl)
+      left: calc(50% - -277px)
 
   &__inner
     padding: 10px 0 300px 0
@@ -21,33 +33,32 @@
     +above($breakpoints.sm)
       margin: 0
       text-align: left
-      padding: 10px 0 40px 0
+      padding: 30px 0 104px 0
     +above($breakpoints.md)
-      padding: 0 0 60px 0
+      padding: 30px 0 164px 0
     +above($breakpoints.xxl)
-      margin: -5px 0 0 0
-      padding: 0 0 193px 0
+      padding: 50px 0 264px 0
 
   &__image
     position: absolute
     z-index -1
     bottom: 0
-    right calc(50% - 348px)
+    right calc(50% - 222px)
     +above($breakpoints.sm)
-      right calc(50% - 713px)
+      right calc(50% - 564px)
     +above($breakpoints.md)
-      right calc(50% - 894px)
+      right calc(50% - 714px)
     +above($breakpoints.xxl)
-      right calc(50% - 1341px)
+      right calc(50% - 964px)
     img
       height: auto
-      width 638px
+      width 385px
       +above($breakpoints.sm)
-        width 900px
+        width 600px
       +above($breakpoints.md)
-        width 1180px
+        width 843px
       +above($breakpoints.xxl)
-        width 1859px
+        width 1211px
 
   &__title
     margin: 0 0 20px 0
@@ -56,7 +67,7 @@
     +above($breakpoints.md)
       margin: 0 0 32px 0
     +above($breakpoints.xxl)
-      margin: 0 0 45px 0
+      margin: 0 0 56px 0
 
   &__feedback
     .feedback
@@ -72,7 +83,7 @@
         +above($breakpoints.md)
           margin: 0 0 40px 94px
         +above($breakpoints.xxl)
-          margin: 0 0 53px 121px
+          margin: 0 0 66px 121px
       &__decor
         display: block
         position: absolute
@@ -83,12 +94,12 @@
           left: -15px;
           bottom: 102%;
         +above($breakpoints.md)
-          bottom: 112%;
+          bottom: 120%;
         img
           height: auto
           width 99px
           +above($breakpoints.md)
-            width 109px
+            width 100px
           +above($breakpoints.xxl)
             width 128px
       &__list
@@ -121,9 +132,12 @@
               height: 100px
         .input
           &__field
+            border: 1px solid #898989;
             +above($breakpoints.sm)
               height: 50px
             +above($breakpoints.md)
               height: 60px
             +above($breakpoints.xxl)
               height: 70px
+            &:focus
+              border: 1px solid #ffffff;

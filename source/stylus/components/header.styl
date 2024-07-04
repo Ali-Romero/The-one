@@ -10,31 +10,27 @@
     +above($breakpoints.md)
       padding: 20px 0
     +above($breakpoints.xxl)
-      padding: 30px 0
+      padding: 25px 0
 
   &__container
     display: flex
     align-items: center
-    gap: 20px
+    gap: 12px
     +above($breakpoints.xxl)
-      gap: 30px
+      gap: 15px
 
   &__logo
     img
       height: auto
-      width 70px
+      width 90px
+      +above($breakpoints.sm)
+        width 80px
       +above($breakpoints.md)
-        width 70px
+        width 90px
       +above($breakpoints.xxl)
-        width 102px
+        width 127px
 
   &__description
     display: none
     +above($breakpoints.sm)
       display: block
-    span
-      display block
-      +above($breakpoints.md)
-        margin: 0 0 3px 0
-      +above($breakpoints.xxl)
-        margin: 0 0 5px 0
