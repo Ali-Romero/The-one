@@ -9,7 +9,7 @@ $.validator.addMethod(
 $.validator.addMethod(
   'phone',
   function (value) {
-    return value.match(/\+\d{1} \(\d{3}\) \d{3} \d{4}/g)
+    return value.match(/\+\d{1} \(7([0-6][0-9]|7[0-7])\) \d{3} \d{4}/g)
   },
   '',
 )
