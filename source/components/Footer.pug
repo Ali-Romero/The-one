@@ -1,0 +1,19 @@
+mixin footer(index)
+  footer.footer
+    .wrapper
+      .footer__row
+
+        .footer__col
+          .footer__logo-container
+            .footer__logo
+              img(src="images/logo-main.svg" loading="lazy" alt="logo" width="102" height="100").d-block
+            .footer__logo-description
+              span.font-m-bold.color-red-1.font-s-24.d-block RUSH BEE 
+              |Франшиза 
+              br
+              |киберклуба
+
+
+        .footer__col
+          .footer__connection
+            +connection(false, index)

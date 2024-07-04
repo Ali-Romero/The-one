@@ -1,0 +1,58 @@
+.city-section
+  background-color: #171716
+  color: $color-white
+
+  &__inner
+    padding: 50px 0
+    +above($breakpoints.sm)
+      padding: 60px 0
+    +above($breakpoints.md)
+      padding: 80px 0
+    +above($breakpoints.xxl)
+      padding: 120px 0
+
+  &__head
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 20px 0
+    flex-direction: column
+    gap: 10px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+      flex-direction: row
+      gap: 20px
+    +above($breakpoints.xxl)
+      gap: 33px
+      margin: 0 0 40px 0
+
+  &__logo
+    img
+      height: auto
+      width 80px
+      +above($breakpoints.sm)
+        width 90px
+      +above($breakpoints.md)
+        width 120px
+      +above($breakpoints.xxl)
+        width 156px
+
+  &__feedback
+    .feedback
+      &__description
+        text-align: center
+        margin: 0 0 20px 0
+        +above($breakpoints.md)
+          margin: 0 0 30px 0
+        +above($breakpoints.xxl)
+          margin: 0 0 40px 0
+      &__list
+        margin: 0 auto
+        width 260px
+        +above($breakpoints.sm)
+          width 550px
+        +above($breakpoints.md)
+          width 700px
+        +above($breakpoints.xxl)
+          width 860px

@@ -1,0 +1,43 @@
+section.main-section
+  +header(true, true)
+  .wrapper
+    .main-section__inner
+      .main-section__image
+        img(src="images/main-image.png" loading="lazy" alt="image" width="1859" height="1045").d-block
+
+      .main-section__content
+        h1.main-section__title.font-s-43 Откройте компьютерный 
+          br
+          |клуб по франшизе 
+          br
+          |и получайте 
+          span.color-gold-1 до 870 000₽ 
+          br
+          |чистой прибыли 
+          br
+          |ежемесячно
+
+        .main-section__feedback
+          .feedback
+            form(data-feedback-form).feedback__form
+              .feedback__description
+                span.color-grey-1 Скачайте подробную 
+                |пошаговую 
+                br
+                |инструкцию по запуску 
+                span.color-grey-1 собственного 
+                  br
+                  |бизнеса с командой 
+                span.color-gold-1 «RUSH BEE»
+              .feedback__list
+                .feedback__item
+                  .input
+                    input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
+                .feedback__item
+                  .input
+                    input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+                .feedback__item
+                  button.btn(type="submit")
+                    span Скачать инструкцию
+                .feedback__decor
+                  img(src="images/main-decor.png" loading="lazy" alt="image" width="186" height="120").d-block

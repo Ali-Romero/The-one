@@ -1,0 +1,28 @@
+section.city-section
+  .wrapper
+    .city-section__inner
+      .city-section__head
+        .city-section__logo
+          img(src="images/logo-main.svg" loading="lazy" alt="logo" width="102" height="100").d-block
+        h2.city-section__title.font-s-44 Станьте владельцем 
+          br
+          |популярного киберклуба 
+          br
+          |с франшизой «RUSH BEE»
+      .city-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__description.font-s-22.text-bold Проверьте, свободен ли ваш город для работы
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
+              .feedback__item
+                .input
+                  input(type="text" name="city" autocomplete="off" placeholder="Город").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+              .feedback__item
+                button.btn(type="submit")
+                  span Проверить

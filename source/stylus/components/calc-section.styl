@@ -1,0 +1,249 @@
+.calc-section
+  &__content
+    background-color: #D9D9D9
+
+  &__inner
+    padding: 50px 0
+    position relative
+    z-index 1
+    +above($breakpoints.md)
+      padding: 60px 0
+    +above($breakpoints.md)
+      padding: 80px 0
+    +above($breakpoints.xxl)
+      padding: 120px 0
+
+  &__image
+    position: absolute
+    z-index -1
+    left: -277px
+    top: 32px
+
+  &__frame
+    background-color: #171716
+    border-radius: 18px
+    color: $color-white
+    padding: 20px 14px
+    +above($breakpoints.sm)
+      padding: 34px 48px
+      border-radius: 22px
+    +above($breakpoints.md)
+      border-radius: 30px
+      padding: 40px 68px
+    +above($breakpoints.xxl)
+      border-radius: 35px
+      padding: 60px 88px
+
+  &__info
+    display: flex
+    justify-content: center
+    color: $color-black
+    margin: 20px 0 24px 0
+    +above($breakpoints.md)
+      margin: 30px 0
+    +above($breakpoints.xxl)
+      margin: 40px 0
+    div
+      background-color: $color-gold-1
+      padding: 12px 30px
+      border-radius: 100px
+      +above($breakpoints.md)
+        padding: 18px 40px
+      +above($breakpoints.xxl)
+        padding: 23px 53px
+
+  &__frame-range
+    margin: 0 0 50px 0
+    +above($breakpoints.md)
+      margin: 0 0 64px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 94px 0
+    .irs
+      cursor pointer
+      height: 14px
+      border-radius: 100px;
+      background: #F3F3F3
+      +above($breakpoints.sm)
+        height: 14px
+      +above($breakpoints.md)
+        height: 18px
+      +above($breakpoints.xxl)
+        height: 24px
+      .irs-grid-pol
+        display: none
+      .irs-bar.irs-bar--single
+        background: $color-gold-1
+        border: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        box-shadow: none
+        height: 8px
+        border-radius: 7px;
+        +above($breakpoints.md)
+          height: 10px
+      .irs-handle.single
+        top: 0
+        bottom: 0
+        margin: auto 0
+        cursor pointer
+        border-radius: 100%
+        background: $color-gold-1
+        border: none
+        width: 22px;
+        height: 22px;
+        box-shadow: none
+        +above($breakpoints.sm)
+          width: 22px;
+          height: 22px;
+        +above($breakpoints.md)
+          width: 28px;
+          height: 28px;
+        +above($breakpoints.xxl)
+          width: 40px;
+          height: 40px;
+        i
+          display: none
+      .irs-line
+        top: 0
+        background: rgba(238, 238, 238, 0.2)
+        border: 0
+        height: 10px
+        border-radius: 5px;
+      .irs-grid
+        bottom: -29px
+        height: auto
+        +above($breakpoints.sm)
+          bottom: -28px
+        +above($breakpoints.md)
+          bottom: -36px
+        +above($breakpoints.xxl)
+          bottom: -44px
+        .irs-grid-text
+          font-size: 13px;
+          line-height: 13px;
+          font-weight: 400
+          color: $color-white
+          font-family: "Manrope-Regular"
+          +above($breakpoints.sm)
+            font-size: 14px;
+            line-height: 14px;
+          +above($breakpoints.md)
+            font-size: 18px;
+            line-height: 18px;
+          +above($breakpoints.xxl)
+            font-size: 24px;
+            line-height: 24px;
+          &.active
+            color: $color-gold-1
+            font-family: "Manrope-Regular"
+
+  &__frame-range-total
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 0 0 13px 0
+    +above($breakpoints.md)
+      margin: 0 0 20px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 30px 0
+    div
+      border-radius: 100px
+      color: $color-black
+      background-color: #F3F3F3
+      margin: 0 0 6px 0
+      padding: 3px 60px
+      +above($breakpoints.xxl)
+        margin: 0 0 10px 0
+        padding: 3px 92px
+
+  &__frame-range-price
+    span
+      line-height: 140%
+      font-size: 32px
+      +above($breakpoints.sm)
+        font-size: 40px
+      +above($breakpoints.xxl)
+        font-size: 50px
+
+  &__feedback
+    background-color: $color-gold-1
+
+  &__feedback-inner
+    padding: 20px 0
+    position relative
+    +above($breakpoints.sm)
+      padding: 40px
+    +above($breakpoints.xxl)
+      padding: 60px
+    .feedback
+      &__title
+        margin: 0 0 20px 0
+        +above($breakpoints.md)
+          margin: 0 0 30px 0
+        +above($breakpoints.xxl)
+         margin: 0 0 40px 0
+      &__list
+        justify-content: center
+        flex-wrap: wrap
+        gap: 8px
+        width 260px
+        margin: 0 auto
+        +above($breakpoints.sm)
+          width unset
+          margin: 0
+          gap: 14px
+        +above($breakpoints.md)
+          gap: 20px
+        +above($breakpoints.xxl)
+          gap: 40px
+      &__item
+        .btn
+          background: $color-white
+        .input
+          &__field
+            color: $color-black
+            border: 1px solid $color-black
+            &::-ms-input-placeholder
+              color: #4d4d4d
+            &::-moz-placeholder
+              color: #4d4d4d
+            &::-webkit-input-placeholder
+              color: #4d4d4d
+            &::placeholder
+              color: #4d4d4d
+            &.error
+              color: $color-error
+              &::placeholder
+                color: $color-error
+              &::-ms-input-placeholder
+                color: $color-error
+              &::-moz-placeholder
+                color: $color-error
+              &::-webkit-input-placeholder
+                color: $color-error
+            &:focus
+              border: 1px solid rgba(0, 0, 0, 0.7);
+
+  &__feedback-decor
+    position: absolute
+    z-index 1
+    right: -23px;
+    bottom: 96%;
+    pointer-events: none
+    +above($breakpoints.sm)
+      bottom: 90%;
+    +above($breakpoints.md)
+      right: -46px;
+    +above($breakpoints.xxl)
+      bottom: 87%
+      right -86px
+    img
+      height: auto
+      width 104px
+      +above($breakpoints.sm)
+        width 188px
+      +above($breakpoints.md)
+        width 290px
+      +above($breakpoints.xxl)
+        width 384px

@@ -1,0 +1,99 @@
+.input
+  display: flex
+  align-items: center
+  height: 100%
+  width 100%
+  position relative
+
+  &__field
+    width: 100%
+    height: 56px
+    line-height: normal
+    font-size: 15px
+    padding: 0
+    display: block
+    outline: none
+    border: 1px solid $color-white
+    border-radius: 100px
+    background: none
+    color: $color-white
+    font-family: "Manrope-Regular"
+    line-height: 120%
+    font-weight: 400
+    padding: 0 10px 0 24px
+    transition: 0.3s
+    +above($breakpoints.sm)
+      height: 45px
+      font-size: 14px
+      padding: 0 10px 0 16px
+    +above($breakpoints.md)
+      font-size: 16px
+      height: 60px
+      padding: 0 10px 0 20px
+    +above($breakpoints.xxl)
+      height: 80px
+      font-size: 16px
+      padding: 0 10px 0 24px
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active
+      -webkit-box-shadow: 0 0 0px 1000px white inset
+      transition: all 5000s ease-in-out 0s
+    &::-ms-input-placeholder
+      font-family: "Manrope-Regular"
+      font-weight: 400
+      color: #898989
+    &::-moz-placeholder
+      font-family: "Manrope-Regular"
+      font-weight: 400
+      color: #898989
+    &::-webkit-input-placeholder
+      font-family: "Manrope-Regular"
+      font-weight: 400
+      color: #898989
+    &::placeholder
+      font-family: "Manrope-Regular"
+      font-weight: 400
+      color: #898989
+    &.error
+      color: $color-error
+      &::placeholder
+        color: $color-error
+      &::-ms-input-placeholder
+        color: $color-error
+      &::-moz-placeholder
+        color: $color-error
+      &::-webkit-input-placeholder
+        color: $color-error
+      animation: shake 0.6s;
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0)
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0)
+        }
+
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0)
+        }
+
+        40%, 60% {
+          transform: translate3d(4px, 0, 0)
+        }
+      }
+    &:focus
+      border: 1px solid rgba(242, 242, 242, 0.55);
+    &--textarea
+      resize: none
+      padding-top: 12px
+      border-radius: 14px
+      +above($breakpoints.sm)
+        padding-top: 11px
+      +above($breakpoints.md)
+        padding-top: 13px
+      +above($breakpoints.xxl)
+        border-radius: 20px
+        padding-top: 26px

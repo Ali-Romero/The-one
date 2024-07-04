@@ -1,0 +1,58 @@
+.footer
+  position: relative
+  z-index 3
+  color: $color-white
+  line-height: 120%
+  font-size: 12px
+  +above($breakpoints.md)
+    font-size: 14px
+  +above($breakpoints.xxl)
+    font-size: 16px
+
+  &__row
+    margin: 0 0 0 auto
+    padding: 30px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+      padding: 18px 0
+      display: flex
+      justify-content: space-between
+      align-items: center
+    +above($breakpoints.xxl)
+      padding: 32px 0
+
+  &__col
+    margin: 0 0 20px 0
+    +above($breakpoints.sm)
+      margin: 0
+    &:last-child
+      margin: 0
+    &:first-child
+      +above($breakpoints.sm)
+        display: flex
+        align-items: center
+
+  &__logo-container
+    display: flex
+    align-items: center
+    gap: 8px
+    flex-direction: column
+    +above($breakpoints.sm)
+      gap: 14px
+      flex-direction: row
+    +above($breakpoints.xxl)
+      gap: 29px
+
+  &__logo
+    img
+      height: auto
+      width 70px
+      +above($breakpoints.md)
+        width 70px
+      +above($breakpoints.xxl)
+        width 102px
+
+  &__connection
+    display: flex
+    justify-content: center

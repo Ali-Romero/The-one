@@ -1,0 +1,15 @@
+mixin header(index)
+  header.header
+    .wrapper
+      .header__inner
+        .header__container
+          .header__logo
+            img(src="images/logo-main.svg" loading="lazy" alt="logo" width="102" height="100").d-block
+          .header__description.font-s-20
+            span.font-m-bold.color-red-1.font-s-24 RUSH BEE 
+            |Франшиза 
+            br
+            |киберклуба
+
+        .header__connection
+          +connection(true, index)

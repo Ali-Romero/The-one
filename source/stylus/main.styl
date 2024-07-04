@@ -1,0 +1,58 @@
+@font-face
+  font-family: "InterTight-Bold"
+  src: url('../fonts/InterTight-Bold.woff'), url('../fonts/InterTight-Bold.woff2')
+  font-display: swap
+@font-face
+  font-family: "InterTight-ExtraBold"
+  src: url('../fonts/InterTight-ExtraBold.woff'), url('../fonts/InterTight-ExtraBold.woff2')
+  font-display: swap
+
+@font-face
+  font-family: "Manrope-Light"
+  src: url('../fonts/Manrope-Light.woff'), url('../fonts/Manrope-Light.woff2')
+  font-display: swap
+@font-face
+  font-family: "Manrope-Regular"
+  src: url('../fonts/Manrope-Regular.woff'), url('../fonts/Manrope-Regular.woff2')
+  font-display: swap
+@font-face
+  font-family: "Manrope-SemiBold"
+  src: url('../fonts/Manrope-SemiBold.woff'), url('../fonts/Manrope-SemiBold.woff2')
+  font-display: swap
+@font-face
+  font-family: "Manrope-Bold"
+  src: url('../fonts/Manrope-Bold.woff'), url('../fonts/Manrope-Bold.woff2')
+  font-display: swap
+
+@import 'common/variables'
+@import 'common/*'
+@import 'components/*'
+
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  overflow: hidden
+  position relative
+
+  &--thanks
+    font-size: 13px
+    line-height: 130%
+    background-image: url('../images/main-bg.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    color: $color-white
+    background-color: #272727
+    +above($breakpoints.xxl)
+      font-size: 16px
+    .header
+      &__inner
+        padding: 20px 0
+  &__content
+    flex: 1
+    &--layout
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
