@@ -39,19 +39,21 @@
     gap: 8px
     flex-direction: column
     +above($breakpoints.sm)
-      gap: 14px
       flex-direction: row
+      gap: 12px
     +above($breakpoints.xxl)
-      gap: 29px
+      gap: 15px
 
   &__logo
     img
       height: auto
-      width 70px
+      width 90px
+      +above($breakpoints.sm)
+        width 80px
       +above($breakpoints.md)
-        width 70px
+        width 90px
       +above($breakpoints.xxl)
-        width 102px
+        width 127px
 
   &__connection
     display: flex

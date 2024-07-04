@@ -1,6 +1,6 @@
 .city-section
-  background-color: #171716
-  color: $color-white
+  background-color: $color-white
+  color: $color-black
 
   &__inner
     padding: 50px 0
@@ -11,42 +11,35 @@
     +above($breakpoints.xxl)
       padding: 120px 0
 
-  &__head
-    display: flex
-    align-items: center
-    justify-content: center
+  &__title
     margin: 0 0 20px 0
-    flex-direction: column
-    gap: 10px
-    text-align: center
-    +above($breakpoints.sm)
-      text-align: left
-      flex-direction: row
-      gap: 20px
+    +above($breakpoints.md)
+      margin: 0 0 30px 0
     +above($breakpoints.xxl)
-      gap: 33px
       margin: 0 0 40px 0
 
-  &__logo
-    img
-      height: auto
-      width 80px
-      +above($breakpoints.sm)
-        width 90px
-      +above($breakpoints.md)
-        width 120px
-      +above($breakpoints.xxl)
-        width 156px
+  &__title-main
+    margin: 0 0 12px 0
+    +above($breakpoints.md)
+      margin: 0 0 14px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 20px 0
 
   &__feedback
     .feedback
+      background-color: #232323;
+      color: $color-white
+      padding: 30px 0
+      +above($breakpoints.xxl)
+        padding: 40px 0
       &__description
-        text-align: center
-        margin: 0 0 20px 0
+        margin: 0 0 10px 0
+        +above($breakpoints.sm)
+          margin: 0 0 14px 0
         +above($breakpoints.md)
-          margin: 0 0 30px 0
+          margin: 0 0 17px 0
         +above($breakpoints.xxl)
-          margin: 0 0 40px 0
+          margin: 0 0 20px 0
       &__list
         margin: 0 auto
         width 260px

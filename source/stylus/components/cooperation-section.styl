@@ -195,7 +195,16 @@
             height: 70px
           &:focus
             border: 1px solid $color-black;
-
+          &.error
+            color: $color-error
+            &::placeholder
+              color: $color-error
+            &::-ms-input-placeholder
+              color: $color-error
+            &::-moz-placeholder
+              color: $color-error
+            &::-webkit-input-placeholder
+              color: $color-error
         .btn
           height: 64px
           +above($breakpoints.md)
