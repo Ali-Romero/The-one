@@ -1,23 +1,24 @@
 section.calc-section
   .calc-section__content
     .wrapper
-      .calc-section__inner.text-center
-        .calc-section__image
-          img(src="images/calc-bg-image.svg" loading="lazy" alt="image" width="517" height="511").d-block
-
-        .calc-section__frame
-          h2.calc-section__title.font-s-44 Рассчитайте прибыль 
+      .calc-section__inner
+        .calc-section__container.color-white
+          h2.calc-section__title.font-s-40 Сколько вы будете 
             br
-            |вашего первого клуба
-          .calc-section__info
-            div Двигайте бегунок и узнайте, 
-              br
-              |какой будет ваша прибыль в первый год работы
+            |зарабатывать?
+          .calc-section__info.text-center Тяните бегунок и узнайте, 
+            br
+            |какой будет ваша прибыль
+
+        .calc-section__frame.text-center
+          .calc-section__frame-btns
+            button(data-type='pc20').tap-color.font-m-bold.font-s-24.text-up.calc-btn.js-range-btn.calc-btn--active 20 ПК
+            button(data-type='pc50').tap-color.font-m-bold.font-s-24.text-up.calc-btn.js-range-btn 50 ПК
+
           .calc-section__frame-range
             .range
           .calc-section__frame-range-total
             div.font-m-s-bold.font-s-24 Результат: 
-            span (прибыль*кол-во месяцев)
-          .calc-section__frame-range-price.color-gold-1
-              span.js-range-total.font-m-s-bold
-              div.font-s-24  рублей
+          .calc-section__frame-range-price.color-red-1.font-m-s-bold
+              span.js-range-total.font-s-50
+              span.font-s-24  тенге
